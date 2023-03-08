@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <section class="product-details">
+      <div class="image-slider">
+        <div class="product-images">
+          <img src="" id="product-image" class="active" alt="" />
+          <img src="" class="product-image" alt="" />
+          <img src="" class="product-image" alt="" />
+          <img src="" class="product-image" alt="" />
+        </div>
+      </div>
+      <div class="details">
+        <h2 class="product-brand"></h2>
+        <p class="product-short-des"></p>
+        <span class="product-price"></span>
+        <span class="product-actual-price"></span>
+        <span class="product-discount"></span>
+
+        <p class="product-sub-heading">select size</p>
+
+        <input type="radio" name="size" value="s" checked hidden id="s-size" />
+        <label for="s-size" class="size-radio-btn check">s</label>
+        <input type="radio" name="size" value="m" hidden id="m-size" />
+        <label for="m-size" class="size-radio-btn">m</label>
+        <input type="radio" name="size" value="l" hidden id="l-size" />
+        <label for="l-size" class="size-radio-btn">l</label>
+        <input type="radio" name="size" value="xl" hidden id="xl-size" />
+        <label for="xl-size" class="size-radio-btn">xl</label>
+        <input type="radio" name="size" value="xxl" hidden id="xxl-size" />
+        <label for="xxl-size" class="size-radio-btn">xxl</label>
+
+        <button class="btn cart-btn">add to cart</button>
+      </div>
+    </section>
+
+    <section class="detail-des">
+      <h2 class="heading">description</h2>
+      <p class="des">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Aliquam quam erat,
+        sollicitudin ut odio eget, facilisis euismod metus. Maecenas pharetra
+        scelerisque purus, quis mollis sem vulputate vel. Suspendisse et libero
+        ac orci porttitor mattis. Etiam venenatis nulla nec laoreet cursus.
+        Mauris massa arcu, porta vel euismod ut, gravida vel elit.
+      </p>
+    </section>
+    <footer></footer>
+    <script>
+      let params = new URLSearchParams(window.location.search);
+      let brand = params.get("brand");
+      let shortDes = params.get("shortDes");
+      let price = params.get("price");
+      let actualPrice = params.get("actualPrice");
+      let img = params.get("img");
+
+      let productImage = document.getElementById("product-image");
+      productImage.src = img;
+      let thumbs = document.getElementsByClassName("product-image");
+      for (let i = 0; i < thumbs.length; i++) {
+        thumbs[i].src = img;
+      }
+      document.querySelector(".product-brand").textContent = brand;
+      document.querySelector(".product-short-des").textContent = shortDes;
+      document.querySelector(".product-price").textContent = price;
+      if (actualPrice.length != 0) {
+        document.querySelector(".product-discount").textContent = "( 50% off )";
+      }
+    </script>
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
