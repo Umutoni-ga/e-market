@@ -40,7 +40,7 @@
         <input type="radio" name="size" value="xxl" hidden id="xxl-size" />
         <label for="xxl-size" class="size-radio-btn">xxl</label>
 
-        <button class="btn cart-btn">add to cart</button>
+        <button class="btn cart-btn add-to-cart-btn">add to cart</button>
       </div>
     </section>
 
@@ -56,30 +56,9 @@
       </p>
     </section>
     <footer></footer>
-    <script>
-      let params = new URLSearchParams(window.location.search);
-      let brand = params.get("brand");
-      let shortDes = params.get("shortDes");
-      let price = params.get("price");
-      let actualPrice = params.get("actualPrice");
-      let img = params.get("img");
-
-      let productImage = document.getElementById("product-image");
-      productImage.src = img;
-      let thumbs = document.getElementsByClassName("product-image");
-      for (let i = 0; i < thumbs.length; i++) {
-        thumbs[i].src = img;
-      }
-      document.querySelector(".product-brand").textContent = brand;
-      document.querySelector(".product-short-des").textContent = shortDes;
-      document.querySelector(".product-price").textContent = price;
-      if (actualPrice.length != 0) {
-        document.querySelector(".product-discount").textContent = "( 50% off )";
-      }
-    </script>
+    <script src="js/data.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/home.js"></script>
     <script src="js/product.js"></script>
   </body>
 </html>

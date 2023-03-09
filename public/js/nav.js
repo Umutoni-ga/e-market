@@ -1,5 +1,6 @@
 const createNav = () => {
   let nav = document.querySelector(".navbar");
+  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
   nav.innerHTML = `
         <div class="nav">
@@ -12,18 +13,10 @@ const createNav = () => {
                     <button class="search-btn">search</button>
                 </div>
                 <a href="#"><img src="img/user.png" alt=""></a>
-                <a href="#"><img src="img/cart.png" alt=""></a>
+                <a href="#" class="cart-number"><img src="img/cart.png" alt="">${cartItems.length}</a>
                 <button onClick="logout()" class="logout-btn">Log Out</button>
             </div>
         </div>
-        <ul class="links-container">
-            <li class="link-item"><a href="index.html" class="link">Home</a></li>
-            <li class="link-item"><a href="allproducts.html" class="link">All products</a></li>
-            <li class="link-item"><a href="#" class="link">Women</a></li>
-            <li class="link-item"><a href="#" class="link">Men</a></li>
-            <li class="link-item"><a href="#" class="link">Kids</a></li>
-            <li class="link-item"><a href="#" class="link">Accessories</a></li>
-        </ul>
     `;
 };
 
@@ -33,4 +26,4 @@ const logout = () => {
   localStorage.removeItem("loginStatus");
   localStorage.removeItem("activatedAssistiveTechnologies");
   window.location.href = "login.html";
-}
+};
