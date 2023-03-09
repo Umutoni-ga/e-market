@@ -62,15 +62,6 @@
   align-items: start;
 }
 
-.assistive-technologies-selection-item {
-}
-
-.assistive-technologies-selection-checkbox {
-    /* increase checkbox size */
-    
-}
-
-
 .assistive-technologies-selection-btns {
   display: flex;
   flex-direction: row;

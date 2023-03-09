@@ -17,9 +17,7 @@
         </p>
         <div class="assistive-technologies-btns">
           <button class="assistive-technologies-btn show-assistive-technologies-selection">Yes</button>
-          <a class="assistive-technologies-link" href="/public/login.html">
-            <button class="assistive-technologies-btn">No</button>
-          </a>
+            <button class="assistive-technologies-btn no-assistive-technologies-selected">No</button>
         </div>
 
         <div class="assistive-technologies-selection">
@@ -28,6 +26,7 @@
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
+              id="screenReader"
               class="assistive-technologies-selection-checkbox"
             />
             <label for="assistive-technologies-selection-checkbox"
@@ -37,6 +36,7 @@
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
+              id="magnifier"
               class="assistive-technologies-selection-checkbox"
             />
             <label for="assistive-technologies-selection-checkbox"
@@ -46,6 +46,7 @@
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
+              id="voiceCommand"
               class="assistive-technologies-selection-checkbox"
             />
             <label for="assistive-technologies-selection-checkbox"
@@ -55,6 +56,7 @@
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
+              id="specialKeyboard"
               class="assistive-technologies-selection-checkbox"
             />
             <label for="assistive-technologies-selection-checkbox"
@@ -62,7 +64,7 @@
             >
           </div>
           <div class="assistive-technologies-selection-btns">
-            <button class="assistive-technologies-selection-btn">
+            <button class="assistive-technologies-selection-btn activate-assistive-technologies-btn">
               Activate
             </button>
             <button class="assistive-technologies-selection-btn hide-assistive-technologies-selection">Cancel</button>

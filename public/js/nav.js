@@ -13,6 +13,7 @@ const createNav = () => {
                 </div>
                 <a href="#"><img src="img/user.png" alt=""></a>
                 <a href="#"><img src="img/cart.png" alt=""></a>
+                <button onClick="logout()" class="logout-btn">Log Out</button>
             </div>
         </div>
         <ul class="links-container">
@@ -27,3 +28,9 @@ const createNav = () => {
 };
 
 createNav();
+
+const logout = () => {
+  localStorage.removeItem("loginStatus");
+  localStorage.removeItem("activatedAssistiveTechnologies");
+  window.location.href = "login.html";
+}

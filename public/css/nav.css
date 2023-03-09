@@ -95,3 +95,12 @@
 .link:hover {
   opacity: 1;
 }
+
+.logout-btn {
+  padding: 10px 20px;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
