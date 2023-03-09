@@ -5,43 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <nav class="navbar"></nav>
-
-    <!-- hero section -->
-    <header class="hero-section">
-      <div class="content">
-        <img src="img/light-logo.png" class="logo" alt="" />
-        <p class="sub-heading">We give you the best quality produtcs</p>
-      </div>
-    </header>
-
     <!-- collections -->
     <section class="collection-container">
-      <a href="#" class="collection">
-        <img src="img/women-collection.png" alt="" />
-        <p class="collection-title">
-          women <br />
-          apparels
+      <!-- section asking the user if they need assistive technologies or not -->
+      <div class="assistive-technologies">
+        <p class="assistive-technologies-msg">
+          Do you need assistive technologies to access our website?
         </p>
-      </a>
-      <a href="#" class="collection">
-        <img src="img/men-collection.png" alt="" />
-        <p class="collection-title">
-          men <br />
-          apparels
-        </p>
-      </a>
-      <a href="#" class="collection">
-        <img src="img/accessories-collection.png" alt="" />
-        <p class="collection-title">accessories</p>
-      </a>
+        <div class="assistive-technologies-btns">
+          <button class="assistive-technologies-btn show-assistive-technologies-selection">Yes</button>
+          <a class="assistive-technologies-link" href="/public/login.html">
+            <button class="assistive-technologies-btn">No</button>
+          </a>
+        </div>
+
+        <div class="assistive-technologies-selection">
+          <p>Which technology(ies) would you like to use?</p>
+          <br>
+          <div class="assistive-technologies-selection-item">
+            <input
+              type="checkbox"
+              class="assistive-technologies-selection-checkbox"
+            />
+            <label for="assistive-technologies-selection-checkbox"
+              >Screen Reader</label
+            >
+          </div>
+          <div class="assistive-technologies-selection-item">
+            <input
+              type="checkbox"
+              class="assistive-technologies-selection-checkbox"
+            />
+            <label for="assistive-technologies-selection-checkbox"
+              >Magnifier</label
+            >
+          </div>
+          <div class="assistive-technologies-selection-item">
+            <input
+              type="checkbox"
+              class="assistive-technologies-selection-checkbox"
+            />
+            <label for="assistive-technologies-selection-checkbox"
+              >Voice Command</label
+            >
+          </div>
+          <div class="assistive-technologies-selection-item">
+            <input
+              type="checkbox"
+              class="assistive-technologies-selection-checkbox"
+            />
+            <label for="assistive-technologies-selection-checkbox"
+              >Special Keyboard</label
+            >
+          </div>
+          <div class="assistive-technologies-selection-btns">
+            <button class="assistive-technologies-selection-btn">
+              Activate
+            </button>
+            <button class="assistive-technologies-selection-btn hide-assistive-technologies-selection">Cancel</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer></footer>
-    <script src="js/nav.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
