@@ -10,6 +10,7 @@ const getProductDetails = () => {
 
   let productImage = document.getElementById("product-image");
   productImage.src = img;
+  productImage.alt = shortDes;
   let thumbs = document.getElementsByClassName("product-image");
   for (let i = 0; i < thumbs.length; i++) {
     thumbs[i].src = img;
@@ -17,7 +18,7 @@ const getProductDetails = () => {
   document.querySelector(".product-brand").textContent = brand;
   document.querySelector(".product-short-des").textContent = shortDes;
   document.querySelector(".product-price").textContent = "$" + price;
-  document.querySelector(".add-to-cart-btn").dataset = id;
+  document.querySelector(".add-to-cart-btn").dataset.id = id;
 
   if (actualPrice.length != 0) {
     document.querySelector(".product-discount").textContent = "( 50% off )";
@@ -62,16 +63,16 @@ sizeBtns.forEach((item, i) => {
 // listen to the click event on the add to cart button
 const addToCartBtn = document.querySelector(".add-to-cart-btn");
 
-addToCartBtn.addEventListener("click", ({target}) => {
+addToCartBtn.addEventListener("click", ({ target }) => {
   // check if the user is logged in
-  const id = parseInt(target.dataset.id)
+  const id = parseInt(target.dataset.id);
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    if(cart.includes(id)) {
-      alert("Item already in cart");
-      return;
-    }
-    cart.push(id);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    createNav();
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  if (cart.includes(id)) {
+    alert("Item already in cart");
+    return;
+  }
+  cart.push(id);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  createNav();
 });

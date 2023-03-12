@@ -2,20 +2,25 @@ const createProduct = (product) => {
   let productCard = document.createElement("div");
   productCard.innerHTML = `
     <div class="product-card">
+    <div class="product-info">
+      <h2 tabindex="0" class="product-brand">${product.name}</h2>
+      <p tabindex="0" class="product-short-des">${product.description}</p>
+      <span tabindex="0" class="price">$${product.price}</span>
+    </div>
     <div class="product-image">
+    <figure>
       <img
         src="${product.image}"
         class="product-thumb"
-        alt=""
+        alt="${product.description}"
         onclick="viewProductDetails(${product.id})"
+        tabindex="0"
       />
-      <button class="card-btn add-to-cart-btn" data-id=${product.id}>add to cart</button>
+      <figcaption>${product.description}</figcaption>
+      </figure>
+      <button class="card-btn add-to-cart-btn" data-id=${product.id} type="button">add to cart</button>
     </div>
-    <div class="product-info">
-      <h2 class="product-brand">${product.name}</h2>
-      <p class="product-short-des">${product.description}</p>
-      <span class="price">$${product.price}</span>
-    </div>
+    
   </div>`;
   return productCard;
 };
