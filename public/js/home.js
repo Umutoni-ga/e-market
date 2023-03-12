@@ -14,7 +14,7 @@ const createProduct = (product) => {
     <div class="product-info">
       <h2 class="product-brand">${product.name}</h2>
       <p class="product-short-des">${product.description}</p>
-      <span class="price">${product.price}</span>
+      <span class="price">$${product.price}</span>
     </div>
   </div>`;
   return productCard;

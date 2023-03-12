@@ -13,7 +13,8 @@ const createNav = () => {
                     <button class="search-btn">search</button>
                 </div>
                 <a href="#"><img src="img/user.png" alt=""></a>
-                <a href="#" class="cart-number"><img src="img/cart.png" alt="">${cartItems.length}</a>
+                <a href="cartDetails.html
+                " class="cart-number"><img src="img/cart.png" alt="">${cartItems.length}</a>
                 <button onClick="logout()" class="logout-btn">Log Out</button>
             </div>
         </div>

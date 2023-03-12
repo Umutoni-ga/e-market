@@ -16,7 +16,7 @@ const getProductDetails = () => {
   }
   document.querySelector(".product-brand").textContent = brand;
   document.querySelector(".product-short-des").textContent = shortDes;
-  document.querySelector(".product-price").textContent = price;
+  document.querySelector(".product-price").textContent = "$" + price;
   document.querySelector(".add-to-cart-btn").dataset = id;
 
   if (actualPrice.length != 0) {
