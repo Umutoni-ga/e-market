@@ -3,9 +3,9 @@ const createProduct = (product) => {
   productCard.innerHTML = `
     <div class="product-card">
     <div class="product-info">
-      <h2 tabindex="0" class="product-brand">${product.name}</h2>
-      <p tabindex="0" class="product-short-des">${product.description}</p>
-      <span tabindex="0" class="price">$${product.price}</span>
+      <h2 tabindex="0" class="product-brand">Item: ${product.name}</h2>
+      <p tabindex="0" class="product-short-des">Description: ${product.description}</p>
+      <span tabindex="0" class="price">Price: $${product.price}</span>
     </div>
     <div class="product-image">
     <figure>

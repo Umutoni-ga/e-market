@@ -1,81 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="public/css/index.css" />
-  </head>
-  <body>
-    <!-- collections -->
-    <section class="collection-container">
-      <div class="assistive-technologies">
-        <p class="assistive-technologies-msg" tabindex="0">
-          Do you need assistive technologies to access our website?
-        </p>
-        <div class="assistive-technologies-btns">
-          <button class="assistive-technologies-btn show-assistive-technologies-selection">Yes</button>
-            <button class="assistive-technologies-btn no-assistive-technologies-selected">No</button>
-        </div>
 
-        <div class="assistive-technologies-selection">
-          <p tabindex="0">Which technology(ies) would you like to use?</p>
-          <br>
-          <div class="assistive-technologies-selection-item">
-            <input
-              type="checkbox"
-              id="screenReader"
-              name="screenReader"
-              class="assistive-technologies-selection-checkbox"
-            />
-            <label for="screenReader"
-              >Screen Reader</label
-            >
-          </div>
-          <div class="assistive-technologies-selection-item">
-            <input
-              type="checkbox"
-              id="magnifier"
-              name="magnifier"
-              class="assistive-technologies-selection-checkbox"
-            />
-            <label for="magnifier"
-              >Magnifier</label
-            >
-          </div>
-          <div class="assistive-technologies-selection-item">
-            <input
-              type="checkbox"
-              name="voiceCommand"
-              id="voiceCommand"
-              class="assistive-technologies-selection-checkbox"
-            />
-            <label for="voiceCommand"
-              >Voice Command</label
-            >
-          </div>
-          <div class="assistive-technologies-selection-item">
-            <input
-              type="checkbox"
-              id="specialKeyboard"
-              name="specialKeyboard"
-              class="assistive-technologies-selection-checkbox"
-            />
-            <label for="specialKeyboard"
-              >Special Keyboard</label
-            >
-          </div>
-          <div class="assistive-technologies-selection-btns">
-            <button class="assistive-technologies-selection-btn activate-assistive-technologies-btn">
-              Activate
-            </button>
-            <button class="assistive-technologies-selection-btn hide-assistive-technologies-selection">Cancel</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="public/css/index.css" />
+</head>
+
+<body>
+  <!-- collections -->
+  <section class="collection-container">
+    <div class="assistive-technologies">
+      <p class="assistive-technologies-msg" tabindex="0">
+        Do you need assistive technologies to access our website?
+      </p>
+      <div class="assistive-technologies-btns">
+        <button class="assistive-technologies-btn no-assistive-technologies-selected">No</button>
+        <button class="assistive-technologies-btn show-assistive-technologies-selection">Yes</button>
+      </div>
+
+      <div class="assistive-technologies-selection">
+        <p tabindex="0">Which technology(ies) would you like to use?</p>
+        <br>
+        <div class="assistive-technologies-selection-item">
+          <input type="checkbox" id="screenReader" name="screenReader"
+            class="assistive-technologies-selection-checkbox" />
+          <label for="screenReader">Screen Reader</label>
+        </div>
+        <div class="assistive-technologies-selection-item">
+          <input type="checkbox" id="magnifier" name="magnifier" class="assistive-technologies-selection-checkbox" />
+          <label for="magnifier">Magnifier</label>
+        </div>
+        <div class="assistive-technologies-selection-item">
+          <input type="checkbox" name="voiceCommand" id="voiceCommand"
+            class="assistive-technologies-selection-checkbox" />
+          <label for="voiceCommand">Voice Command</label>
+        </div>
+        <div class="assistive-technologies-selection-item">
+          <input type="checkbox" id="specialKeyboard" name="specialKeyboard"
+            class="assistive-technologies-selection-checkbox" />
+          <label for="specialKeyboard">Special Keyboard</label>
+        </div>
+        <div class="assistive-technologies-selection-btns">
+          <button class="assistive-technologies-selection-btn activate-assistive-technologies-btn">
+            Activate
+          </button>
+          <button class="assistive-technologies-selection-btn hide-assistive-technologies-selection">Cancel</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="public/js/index.js"></script>
-  </body>
+  <script src="public/js/index.js"></script>
+</body>
+
 </html>
