@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="public/css/index.css" />
   </head>
   <body>
     <!-- collections -->
     <section class="collection-container">
-      <!-- section asking the user if they need assistive technologies or not -->
       <div class="assistive-technologies">
-        <p class="assistive-technologies-msg">
+        <p class="assistive-technologies-msg" tabindex="0">
           Do you need assistive technologies to access our website?
         </p>
         <div class="assistive-technologies-btns">
@@ -21,15 +20,16 @@
         </div>
 
         <div class="assistive-technologies-selection">
-          <p>Which technology(ies) would you like to use?</p>
+          <p tabindex="0">Which technology(ies) would you like to use?</p>
           <br>
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
               id="screenReader"
+              name="screenReader"
               class="assistive-technologies-selection-checkbox"
             />
-            <label for="assistive-technologies-selection-checkbox"
+            <label for="screenReader"
               >Screen Reader</label
             >
           </div>
@@ -37,19 +37,21 @@
             <input
               type="checkbox"
               id="magnifier"
+              name="magnifier"
               class="assistive-technologies-selection-checkbox"
             />
-            <label for="assistive-technologies-selection-checkbox"
+            <label for="magnifier"
               >Magnifier</label
             >
           </div>
           <div class="assistive-technologies-selection-item">
             <input
               type="checkbox"
+              name="voiceCommand"
               id="voiceCommand"
               class="assistive-technologies-selection-checkbox"
             />
-            <label for="assistive-technologies-selection-checkbox"
+            <label for="voiceCommand"
               >Voice Command</label
             >
           </div>
@@ -57,9 +59,10 @@
             <input
               type="checkbox"
               id="specialKeyboard"
+              name="specialKeyboard"
               class="assistive-technologies-selection-checkbox"
             />
-            <label for="assistive-technologies-selection-checkbox"
+            <label for="specialKeyboard"
               >Special Keyboard</label
             >
           </div>
@@ -73,6 +76,6 @@
       </div>
     </section>
 
-    <script src="js/index.js"></script>
+    <script src="public/js/index.js"></script>
   </body>
 </html>

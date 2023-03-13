@@ -7,5 +7,5 @@ const clearCart = () => {
 const paymentBtn = document.querySelector(".pay-btn");
 paymentBtn.addEventListener("click", () => {
   clearCart();
-  window.location.href = "home.html";
+  window.location.href = "success.html";
 });

@@ -7,14 +7,9 @@ const createNav = () => {
             <a href="/public/home.html">
             <img src="img/dark-logo.png" class="brand-logo" alt="">
             </a>
-            <div class="nav-items">
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="search brand, product">
-                    <button class="search-btn">search</button>
-                </div>
-                <a href="#"><img src="img/user.png" alt=""></a>
+            <div class="nav-items">                
                 <a href="cartDetails.html
-                " class="cart-number"><img src="img/cart.png" alt="">${cartItems.length}</a>
+                " class="cart-number"><img src="img/cart.png" alt="Click to see cart details. cart items ">${cartItems.length}</a>
                 <button onClick="logout()" class="logout-btn">Log Out</button>
             </div>
         </div>
@@ -26,5 +21,6 @@ createNav();
 const logout = () => {
   localStorage.removeItem("loginStatus");
   localStorage.removeItem("activatedAssistiveTechnologies");
+  localStorage.removeItem("cart");
   window.location.href = "login.html";
 };

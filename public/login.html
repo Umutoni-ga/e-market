@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/login.css" />
-  </head>
-  <body>
-    <section class="login-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/login.css" />
+</head>
+
+<body>
+  <section class="login-container">
+    <h2 tabindex="0">
       Login to your account
-      <!-- login form -->
-      <form class="login-form">
-        <div class="form-control">
-          <label for="email">Email/User name</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
-        </div>
-        <div class="login-btns">
-          <a href="/public/recover.html">
-            <button type="button">Recover Account</button>
-          </a>
-          <button type="button" class="login-btn">Login</button>
-        </div>
-      </form>
-    </section>
-    <script src="js/login.js"></script>
-  </body>
+    </h2>
+
+    <!-- login form -->
+    <form class="login-form">
+      <div class="form-control">
+        <label for="email">Email or User name</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div class="login-btns">
+        <a href="/public/recover.html">
+          <button type="button">Recover Account</button>
+        </a>
+        <button type="button" class="login-btn">Login</button>
+      </div>
+    </form>
+  </section>
+  <script src="js/login.js"></script>
+</body>
+
 </html>

@@ -45,17 +45,17 @@ activateAssistiveTechnologiesButton.addEventListener("click", () => {
 
   // check the login status in the local storage then go to the home page or the login page
   if (localStorage.getItem("loginStatus") === "loggedIn") {
-    window.location.href = "home.html";
+    window.location.href = "public/home.html";
   } else {
-    window.location.href = "login.html";
+    window.location.href = "public/login.html";
   }
 });
 
 // if noAssistiveTechnologiesSelectedButton is clicked, check the login status in the local storage then go to the home page or the login page
 noAssistiveTechnologiesSelectedButton.addEventListener("click", () => {
   if (localStorage.getItem("loginStatus") === "loggedIn") {
-    window.location.href = "home.html";
+    window.location.href = "public/home.html";
   } else {
-    window.location.href = "login.html";
+    window.location.href = "public/login.html";
   }
 });

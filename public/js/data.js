@@ -5,7 +5,7 @@ const products = [
     price: 20,
     actualPrice: 30,
     image: "img/card1.png",
-    description: "A short line about the cloth..",
+    description: "a blue dress long dress with long collar",
   },
   {
     id: 3,
@@ -13,15 +13,7 @@ const products = [
     price: 70,
     actualPrice: 70,
     image: "img/card2.png",
-    description: "Another short line about the cloth..",
-  },
-  {
-    id: 4,
-    name: "Full Fit",
-    price: 260,
-    actualPrice: 290,
-    image: "img/card3.png",
-    description: "Third short line about the cloth..",
+    description: "blue men trousers with long legs",
   },
   {
     id: 5,
@@ -29,7 +21,7 @@ const products = [
     price: 140,
     actualPrice: 150,
     image: "img/card4.png",
-    description: "Fourth short line about the cloth..",
+    description: "Ruched dress for women in black and white colors",
   },
   {
     id: 6,
@@ -37,7 +29,7 @@ const products = [
     price: 149,
     actualPrice: 149,
     image: "img/card5.png",
-    description: "Fifth short line about the cloth..",
+    description: "smart shirt for men, blue and gray",
   },
   {
     id: 1,
@@ -46,6 +38,6 @@ const products = [
     actualPrice: 180,
     image: "img/card13.png",
     description:
-      "The Nike Air Max 270 React is a new hybrid model that combines the Air Max 270 with the React foam sole.",
+      "The Nike Air Max 270 React, black unisex shoe",
   },
 ];

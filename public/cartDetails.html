@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Products</title>
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/cartDetails.css" />
-  </head>
-  <body>
-    <nav class="navbar"></nav>
 
-    <section class="product">
-      <h2 class="product-category">Cart Details</h2>
-      <div class="product-container"></div>
-      <div class="checkout-section">
-        <h2>Continue to checkout</h2>
-        <a href="checkout.html">
-          <button class="checkout-btn">Proceed</button>
-        </a>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/cartDetails.css" />
+</head>
 
-    <footer></footer>
+<body>
+  <nav class="navbar"></nav>
+  <div id="top"></div>
+  <section class="product">
+    <h2 class="product-category">Cart Details</h2>
+    <div class="product-container"></div>
+    <div class="checkout-section">
+      <h2 tabindex="0">Continue to checkout</h2>
+      <a href="checkout.html">
+        <button class="checkout-btn" type="button">Proceed</button>
+      </a>
+    </div>
+  </section>
 
-    <script src="js/data.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/cartDetails.js"></script>
-  </body>
+  <div class="go-top">
+    <a href="#top">
+      <img src="./img/go-top.png" class="go-top-img" alt="go back to the top" />
+    </a>
+  </div>
+
+  <footer></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cartDetails.js"></script>
+</body>
+
 </html>

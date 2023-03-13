@@ -10,9 +10,9 @@ const createProduct = (product) => {
     />
   </div>
   <div class="product-info">
-    <h2 class="product-brand">${product.name}</h2>
-    <p class="product-short-des">${product.description}</p>
-    <span class="price">$${product.price}</span>
+    <h2 tabindex="0" class="product-brand">${product.name}</h2>
+    <p tabindex="0" class="product-short-des">${product.description}</p>
+    <span tabindex="0" class="price">$${product.price}</span>
     <div>
       <button class="remove-from-cart-btn" data-id=${product.id}>
         remove from cart
